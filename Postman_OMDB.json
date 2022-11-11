@@ -1,0 +1,724 @@
+{
+	"info": {
+		"_postman_id": "a00e84ed-9aee-43a6-88a5-4015d6406d64",
+		"name": "MovieOMDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20393150"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"naufal12345@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LoginResponse",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"naufal12345@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "token=eyJhbGciOiJIUzI1NiJ9.NjM2ZGY2Mjk2NzUxZWU0MGQwMmM4ZmRh.uzVAWVv9UUjgziB3a6wttYVrW20OIpoy6Tpz5xmveAk; Path=/"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-ctDgz5wITGoRjbxf2rwhZA8PYjU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 11:39:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"userId\": \"636df6296751ee40d02c8fda\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "s",
+						"value": "batman",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"haha\",\r\n    \"lastName\": \"hihi\",\r\n    \"email\": \"naufal123456@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3080/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RegisterResponse",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "s",
+								"value": "batman",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"haha\",\r\n    \"lastName\": \"hihi\",\r\n    \"email\": \"naufal123456@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 11:40:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3080/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AuthResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-M8Qh8XNW1Rvuc68AKtqC1N3As0U\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 11:41:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"636df6296751ee40d02c8fda\",\n    \"isAuth\": true,\n    \"email\": \"naufal12345@gmail.com\",\n    \"firstName\": \"wkwk\",\n    \"lastName\": \"wkwk\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?s=batman&apikey=faf7e5bb",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "batman"
+						},
+						{
+							"key": "apikey",
+							"value": "faf7e5bb"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SearchResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.omdbapi.com/?s=batman&apikey=faf7e5bb",
+							"protocol": "http",
+							"host": [
+								"www",
+								"omdbapi",
+								"com"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "batman"
+								},
+								{
+									"key": "apikey",
+									"value": "faf7e5bb"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 11:44:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 11 Nov 2022 12:44:27 GMT"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Fri, 11 Nov 2022 11:44:27 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "*, Accept-Encoding"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "MISS"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7686c6a81af9919f-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Search\": [\n        {\n            \"Title\": \"Batman Begins\",\n            \"Year\": \"2005\",\n            \"imdbID\": \"tt0372784\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman v Superman: Dawn of Justice\",\n            \"Year\": \"2016\",\n            \"imdbID\": \"tt2975590\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"The Batman\",\n            \"Year\": \"2022\",\n            \"imdbID\": \"tt1877830\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman\",\n            \"Year\": \"1989\",\n            \"imdbID\": \"tt0096895\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BZDNjOGNhN2UtNmNhMC00YjU4LWEzMmUtNzRkM2RjN2RiMjc5XkEyXkFqcGdeQXVyMTU0OTM5ODc1._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman Returns\",\n            \"Year\": \"1992\",\n            \"imdbID\": \"tt0103776\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman & Robin\",\n            \"Year\": \"1997\",\n            \"imdbID\": \"tt0118688\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman Forever\",\n            \"Year\": \"1995\",\n            \"imdbID\": \"tt0112462\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"The Lego Batman Movie\",\n            \"Year\": \"2017\",\n            \"imdbID\": \"tt4116284\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman: The Animated Series\",\n            \"Year\": \"1992–1995\",\n            \"imdbID\": \"tt0103359\",\n            \"Type\": \"series\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg\"\n        },\n        {\n            \"Title\": \"Batman v Superman: Dawn of Justice - Ultimate Edition\",\n            \"Year\": \"2016\",\n            \"imdbID\": \"tt18689424\",\n            \"Type\": \"movie\",\n            \"Poster\": \"https://m.media-amazon.com/images/M/MV5BN2I4OTllM2MtMWVhNC00MjkzLWJlMDUtN2FhMGQ2ZGVjMjllXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg\"\n        }\n    ],\n    \"totalResults\": \"523\",\n    \"Response\": \"True\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt0372784&apikey=faf7e5bb",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt0372784"
+						},
+						{
+							"key": "apikey",
+							"value": "faf7e5bb"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DetailResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.omdbapi.com/?i=tt0372784&apikey=faf7e5bb",
+							"protocol": "http",
+							"host": [
+								"www",
+								"omdbapi",
+								"com"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "tt0372784"
+								},
+								{
+									"key": "apikey",
+									"value": "faf7e5bb"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 11:48:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=86400"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 11 Nov 2022 12:48:22 GMT"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Fri, 11 Nov 2022 11:48:22 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "*, Accept-Encoding"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "MISS"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "7686cc692bb7919f-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Title\": \"Batman Begins\",\n    \"Year\": \"2005\",\n    \"Rated\": \"PG-13\",\n    \"Released\": \"15 Jun 2005\",\n    \"Runtime\": \"140 min\",\n    \"Genre\": \"Action, Crime, Drama\",\n    \"Director\": \"Christopher Nolan\",\n    \"Writer\": \"Bob Kane, David S. Goyer, Christopher Nolan\",\n    \"Actors\": \"Christian Bale, Michael Caine, Ken Watanabe\",\n    \"Plot\": \"After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.\",\n    \"Language\": \"English, Mandarin\",\n    \"Country\": \"United States, United Kingdom\",\n    \"Awards\": \"Nominated for 1 Oscar. 13 wins & 79 nominations total\",\n    \"Poster\": \"https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg\",\n    \"Ratings\": [\n        {\n            \"Source\": \"Internet Movie Database\",\n            \"Value\": \"8.2/10\"\n        },\n        {\n            \"Source\": \"Rotten Tomatoes\",\n            \"Value\": \"84%\"\n        },\n        {\n            \"Source\": \"Metacritic\",\n            \"Value\": \"70/100\"\n        }\n    ],\n    \"Metascore\": \"70\",\n    \"imdbRating\": \"8.2\",\n    \"imdbVotes\": \"1,458,039\",\n    \"imdbID\": \"tt0372784\",\n    \"Type\": \"movie\",\n    \"DVD\": \"18 Oct 2005\",\n    \"BoxOffice\": \"$206,863,479\",\n    \"Production\": \"N/A\",\n    \"Website\": \"N/A\",\n    \"Response\": \"True\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3080/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LogoutResponse",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 11 Nov 2022 12:32:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true\n}"
+				}
+			]
+		}
+	]
+}
