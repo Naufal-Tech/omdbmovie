@@ -1,6 +1,6 @@
 // SEBELUM REFACTOR
 
-let str = "wkwk(lol)wkwk"
+let str = "wk(w)k"
 
 function findFirstStringInBracket (str) {
 	if(str.length > 0){
